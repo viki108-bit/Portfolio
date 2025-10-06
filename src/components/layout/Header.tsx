@@ -1,27 +1,9 @@
 'use client';
 import { cn } from '@/lib/utils';
-import { Eye, Briefcase, Menu } from 'lucide-react';
+import { Briefcase, Menu } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
-import { getVisitCount } from '@/app/actions';
 import { Button } from '../ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
-
-const VisitCounter = () => {
-    const [count, setCount] = useState<number | null>(null);
-
-    useEffect(() => {
-        getVisitCount().then(setCount);
-    }, []);
-
-    return (
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Eye className="h-4 w-4 text-accent" />
-            <span className="font-mono">
-                {count !== null ? count.toLocaleString() : '...'}
-            </span>
-        </div>
-    );
-};
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,7 +43,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-            <VisitCounter />
+            
             <div className="md:hidden">
               <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger asChild>

@@ -2,14 +2,6 @@
 'use server';
 import { z } from 'zod';
 
-// This is a mock implementation. In a real app, you'd use a database.
-let visitCount = Math.floor(Math.random() * (2500 - 1500 + 1)) + 1500;
-
-export async function getVisitCount() {
-  visitCount++;
-  return visitCount;
-}
-
 const contactSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please enter a valid email." }),
