@@ -7,7 +7,14 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowUpRight, Github } from 'lucide-react';
 
 const projects = [
-    // Add your projects here
+    {
+        title: "HR Analytics Dashboard",
+        description: "An interactive dashboard built in Excel to analyze employee data. It features insights on demographics, performance, and salary distribution using Pivot Tables, Charts, and Slicers to drive data-informed HR decisions.",
+        image: PlaceHolderImages.find(p => p.id === 'project-1'),
+        tags: ["Excel", "Data Visualization", "Pivot Tables", "HR Analytics"],
+        liveUrl: "",
+        githubUrl: "https://github.com/viki108-bit/excel-HR-dashboard2-projects"
+    }
 ]
 
 export function ProjectsSection() {
@@ -46,16 +53,20 @@ export function ProjectsSection() {
                                 </div>
                             </CardContent>
                             <CardFooter className="flex justify-end gap-2">
-                                <Button variant="ghost" asChild>
-                                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                                        <Github className="mr-2 h-4 w-4" /> Code
-                                    </a>
-                                </Button>
-                                 <Button asChild>
-                                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                                        Live Demo <ArrowUpRight className="ml-2 h-4 w-4" />
-                                    </a>
-                                </Button>
+                                {project.githubUrl && (
+                                    <Button variant="ghost" asChild>
+                                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                                            <Github className="mr-2 h-4 w-4" /> Code
+                                        </a>
+                                    </Button>
+                                )}
+                                {project.liveUrl && (
+                                     <Button asChild>
+                                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                                            Live Demo <ArrowUpRight className="ml-2 h-4 w-4" />
+                                        </a>
+                                    </Button>
+                                )}
                             </CardFooter>
                         </Card>
                     ))}
