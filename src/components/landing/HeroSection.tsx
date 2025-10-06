@@ -46,9 +46,6 @@ export function HeroSection() {
                         Download CV
                     </a>
                 </Button>
-                <Button size="lg" variant="outline" asChild className="transition-transform duration-200 hover:scale-105">
-                     <a href="#contact">Get In Touch</a>
-                </Button>
             </div>
         </AnimatedSection>
     );
