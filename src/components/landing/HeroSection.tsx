@@ -13,9 +13,9 @@ export function HeroSection() {
                     src="/profile.jpg"
                     alt="Viki Gaikwad"
                     data-ai-hint="professional portrait"
-                    width={240}
-                    height={240}
-                    className="relative rounded-full w-60 h-60 object-cover border-4 border-background"
+                    width={320}
+                    height={320}
+                    className="relative rounded-full w-80 h-80 object-cover border-4 border-background"
                     priority
                 />
             </div>
