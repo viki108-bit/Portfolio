@@ -9,10 +9,8 @@ const projects = [
     {
         title: "HR Dashboard",
         description: "Created an HR Analytics Dashboard in Excel to analyze employee data, highlighting demographics, performance, and salary distributions using Pivot Tables, Charts, and Slicers.",
-        image: {
-            imageUrl: "/hr-dashboard.jpg",
-            description: "HR Analytics Dashboard Screenshot"
-        },
+        imageUrl: "/hr-dashboard.jpg",
+        imageDescription: "HR Analytics Dashboard Screenshot",
         tags: ["Excel", "Pivot Tables", "Data Visualization", "HR Analytics"],
         liveUrl: "",
         githubUrl: "https://github.com/viki108-bit/excel-HR-dashboard2-projects"
@@ -34,10 +32,10 @@ export function ProjectsSection() {
                     {projects.map((project, index) => (
                         <Card key={index} className="flex flex-col bg-card/50 hover:bg-card border-border/50 hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
                             <CardHeader>
-                                {project.image && (
+                                {project.imageUrl && (
                                     <Image 
-                                        src={project.image.imageUrl} 
-                                        alt={project.image.description}
+                                        src={project.imageUrl} 
+                                        alt={project.imageDescription}
                                         width={600} 
                                         height={400} 
                                         className="rounded-lg object-cover aspect-video"
