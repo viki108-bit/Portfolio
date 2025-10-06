@@ -14,6 +14,15 @@ const projects = [
         tags: ["Excel", "Pivot Tables", "Data Visualization", "HR Analytics"],
         liveUrl: "",
         githubUrl: "https://github.com/viki108-bit/excel-HR-dashboard2-projects"
+    },
+    {
+        title: "Sales Dashboard",
+        description: "An Excel dashboard analyzing sales performance across sellers, categories, and states. It highlights key insights like top performers, monthly peaks, and geographical trends.",
+        imageUrl: "/sales-dashboard.jpg",
+        imageDescription: "Sales Dashboard Screenshot",
+        tags: ["Excel", "Data Visualization", "Sales Analytics"],
+        liveUrl: "",
+        githubUrl: "https://github.com/viki108-bit/excel-Sale-dashboard-projects"
     }
 ]
 
@@ -28,18 +37,20 @@ export function ProjectsSection() {
             </div>
 
             {projects.length > 0 ? (
-                <div className="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-3">
+                <div className="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-2">
                     {projects.map((project, index) => (
                         <Card key={index} className="flex flex-col bg-card/50 hover:bg-card border-border/50 hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
                             <CardHeader>
                                 {project.imageUrl && (
-                                    <Image 
-                                        src={project.imageUrl} 
-                                        alt={project.imageDescription}
-                                        width={600} 
-                                        height={400} 
-                                        className="rounded-lg object-contain"
-                                    />
+                                    <div className="relative">
+                                        <Image 
+                                            src={project.imageUrl} 
+                                            alt={project.imageDescription}
+                                            width={600} 
+                                            height={400} 
+                                            className="rounded-lg object-contain"
+                                        />
+                                    </div>
                                 )}
                             </CardHeader>
                             <CardContent className="flex-grow">
