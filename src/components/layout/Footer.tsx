@@ -1,4 +1,4 @@
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function Footer() {
@@ -19,6 +19,11 @@ export function Footer() {
                     <Button variant="ghost" size="icon" asChild>
                         <a href="https://www.linkedin.com/in/viki-gaikwad-1081-bit" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <Linkedin className="h-5 w-5" />
+                        </a>
+                    </Button>
+                    <Button variant="ghost" size="icon" asChild>
+                        <a href="mailto:vikigaikwad108@gmail.com" aria-label="Email">
+                            <Mail className="h-5 w-5" />
                         </a>
                     </Button>
                 </div>
