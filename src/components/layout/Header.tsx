@@ -35,14 +35,14 @@ export function Header() {
             <Briefcase className="h-6 w-6 text-primary"/>
             PORTFOLIO
         </a>
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="text-muted-foreground transition-colors hover:text-foreground">
-              {link.label}
-            </a>
-          ))}
-        </nav>
         <div className="flex items-center gap-4">
+            <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+              {navLinks.map((link) => (
+                <a key={link.href} href={link.href} className="text-muted-foreground transition-colors hover:text-foreground">
+                  {link.label}
+                </a>
+              ))}
+            </nav>
             
             <div className="md:hidden">
               <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
