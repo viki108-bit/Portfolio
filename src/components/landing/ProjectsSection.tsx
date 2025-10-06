@@ -1,17 +1,19 @@
 import Image from 'next/image';
 import { AnimatedSection } from '../shared/AnimatedSection';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowUpRight, Github } from 'lucide-react';
 
 const projects = [
     {
-        title: "HR Analytics Dashboard",
-        description: "An interactive dashboard built in Excel to analyze employee data. It features insights on demographics, performance, and salary distribution using Pivot Tables, Charts, and Slicers to drive data-informed HR decisions.",
-        image: PlaceHolderImages.find(p => p.id === 'project-1'),
-        tags: ["Excel", "Data Visualization", "Pivot Tables", "HR Analytics"],
+        title: "HR Dashboard",
+        description: "Created an HR Analytics Dashboard in Excel to analyze employee data, highlighting demographics, performance, and salary distributions using Pivot Tables, Charts, and Slicers.",
+        image: {
+            imageUrl: "/hr-dashboard.jpg",
+            description: "HR Analytics Dashboard Screenshot"
+        },
+        tags: ["Excel", "Pivot Tables", "Data Visualization", "HR Analytics"],
         liveUrl: "",
         githubUrl: "https://github.com/viki108-bit/excel-HR-dashboard2-projects"
     }
@@ -36,7 +38,6 @@ export function ProjectsSection() {
                                     <Image 
                                         src={project.image.imageUrl} 
                                         alt={project.image.description}
-                                        data-ai-hint={project.image.imageHint}
                                         width={600} 
                                         height={400} 
                                         className="rounded-lg object-cover aspect-video"
