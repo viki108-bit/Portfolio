@@ -37,7 +37,7 @@ export function ProjectsSection() {
     return (
         <AnimatedSection id="projects">
             <div className="text-center">
-                <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight">Featured Projects</h2>
+                <h2 className="font-headline text-3xl sm:text-4xl font-bold tracking-tight">Projects</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
                     A selection of projects that demonstrate my skills in data analysis, visualization, and machine learning.
                 </p>
