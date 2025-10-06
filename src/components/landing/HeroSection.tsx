@@ -17,9 +17,9 @@ export function HeroSection() {
                         src={profileImage.imageUrl}
                         alt={profileImage.description}
                         data-ai-hint={profileImage.imageHint}
-                        width={160}
-                        height={160}
-                        className="relative rounded-full w-40 h-40 object-cover border-4 border-background"
+                        width={192}
+                        height={192}
+                        className="relative rounded-full w-48 h-48 object-cover border-4 border-background"
                         priority
                     />
                 )}
