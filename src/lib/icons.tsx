@@ -47,3 +47,47 @@ export const ExcelIcon = (props: SVGProps<SVGSVGElement>) => (
         <path d="M16.5 15.5L14 13L11.5 15.5" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
     </svg>
 );
+
+export const PandasIcon = (props: SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path d="M12 2 L2 7 L2 17 L12 22 L22 17 L22 7 Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M2 7 L12 12 L22 7" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M12 12 V 22" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+    </svg>
+);
+
+export const NumpyIcon = (props: SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path d="M4 4H20V20H4Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M4 10H20" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M10 4V20" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+    </svg>
+);
+
+export const ScikitLearnIcon = (props: SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+        <path d="M12 2 V 22" stroke="currentColor" strokeWidth="2" />
+        <path d="M2 12 H 22" stroke="currentColor" strokeWidth="2" />
+        <circle cx="12" cy="12" r="3" fill="currentColor" />
+    </svg>
+);
+
+export const GitIcon = (props: SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path d="M20 20L15 15M15 15L15 3M15 15L3 15" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <circle cx="15" cy="15" r="3" fill="currentColor" />
+        <circle cx="9" cy="9" r="3" fill="currentColor" />
+        <circle cx="3" cy="3" r="3" fill="currentColor" />
+    </svg>
+);
+
+export const AiIcon = (props: SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path d="M12 2 L2 7 L2 17 L12 22 L22 17 L22 7 Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M2 7 L12 12 L22 7" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M12 12 V 22" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M7 9.5 L12 12 L17 9.5" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M12 2 V 7" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+    </svg>
+);
