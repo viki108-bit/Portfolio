@@ -1,28 +1,23 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowDownToLine } from 'lucide-react';
 import { AnimatedSection } from '../shared/AnimatedSection';
 
 export function HeroSection() {
-    const profileImage = PlaceHolderImages.find(p => p.id === 'profile-picture');
-
     return (
         <AnimatedSection id="hero" className="text-center pt-8 sm:pt-16">
             <div className="relative inline-block mb-8">
                 <div className="absolute inset-0 rounded-full bg-accent opacity-20 blur-2xl animate-pulse"></div>
                 <div className="absolute -inset-1 rounded-full bg-accent/30 opacity-20 blur-xl"></div>
-                {profileImage && (
-                    <Image
-                        src={profileImage.imageUrl}
-                        alt={profileImage.description}
-                        data-ai-hint={profileImage.imageHint}
-                        width={192}
-                        height={192}
-                        className="relative rounded-full w-48 h-48 object-cover border-4 border-background"
-                        priority
-                    />
-                )}
+                <Image
+                    src="/profile.jpg"
+                    alt="Viki Gaikwad"
+                    data-ai-hint="professional portrait"
+                    width={240}
+                    height={240}
+                    className="relative rounded-full w-60 h-60 object-cover border-4 border-background"
+                    priority
+                />
             </div>
 
             <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">

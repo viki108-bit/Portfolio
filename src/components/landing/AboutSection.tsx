@@ -1,10 +1,7 @@
 import { AnimatedSection } from '../shared/AnimatedSection';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 
 export function AboutSection() {
-    const profileImage = PlaceHolderImages.find(p => p.id === 'profile-picture');
-
     return (
         <AnimatedSection id="about">
             <div className="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
@@ -18,15 +15,13 @@ export function AboutSection() {
                     </p>
                 </div>
                  <div className="relative h-64 md:h-auto md:aspect-square">
-                    {profileImage && (
-                        <Image
-                            src={profileImage.imageUrl}
-                            alt="Viki Gaikwad"
-                            data-ai-hint="professional portrait"
-                            fill
-                            className="rounded-lg object-cover object-top"
-                        />
-                    )}
+                    <Image
+                        src="/profile.jpg"
+                        alt="Viki Gaikwad"
+                        data-ai-hint="professional portrait"
+                        fill
+                        className="rounded-lg object-cover object-top"
+                    />
                 </div>
             </div>
         </AnimatedSection>
