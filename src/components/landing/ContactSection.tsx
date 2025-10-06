@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { useToast } from "@/hooks/use-toast";
 import { submitContactForm, type ContactFormState } from '@/app/actions';
 import { AnimatedSection } from '../shared/AnimatedSection';
@@ -32,7 +33,7 @@ function SubmitButton() {
 export function ContactSection() {
     const { toast } = useToast();
     const initialState: ContactFormState = { message: '', success: false };
-    const [state, formAction] = useFormState(submitContactForm, initialState);
+    const [state, formAction] = useActionState(submitContactForm, initialState);
 
     useEffect(() => {
         if (state.message) {
