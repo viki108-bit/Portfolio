@@ -4,6 +4,7 @@ import { HeroSection } from '@/components/landing/HeroSection';
 import { SkillsSection } from '@/components/landing/SkillsSection';
 import { ProjectsSection } from '@/components/landing/ProjectsSection';
 import { ContactSection } from '@/components/landing/ContactSection';
+import { AboutSection } from '@/components/landing/AboutSection';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <AboutSection />
         <SkillsSection />
         <ProjectsSection />
         <ContactSection />

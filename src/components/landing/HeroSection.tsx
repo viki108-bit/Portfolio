@@ -26,13 +26,13 @@ export function HeroSection() {
             </div>
 
             <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-                Jane Doe
+                Viki Gaikwad
             </h1>
             <p className="mt-4 font-headline text-xl sm:text-2xl text-primary">
-                Data Analyst & Storyteller
+                Data Analyst | Data Scientist | Python Developer
             </p>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground">
-                I transform complex data into clear, actionable insights. Passionate about uncovering narratives hidden within numbers and driving data-informed decisions.
+                Transforming complex data into clear, actionable insights. Welcome to my digital portfolio
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -41,7 +41,7 @@ export function HeroSection() {
                     asChild 
                     className="bg-[#ff4081] text-white hover:bg-[#ff4081]/90 transition-transform duration-200 hover:scale-105"
                 >
-                    <a href="/resume.pdf" download="JaneDoe-Resume.pdf">
+                    <a href="/resume.pdf" download="VikiGaikwad-Resume.pdf">
                         <ArrowDownToLine className="mr-2 h-5 w-5" />
                         Download CV
                     </a>
