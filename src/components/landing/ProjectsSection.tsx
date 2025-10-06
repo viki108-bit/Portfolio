@@ -38,7 +38,7 @@ export function ProjectsSection() {
                                         alt={project.imageDescription}
                                         width={600} 
                                         height={400} 
-                                        className="rounded-lg object-cover aspect-video"
+                                        className="rounded-lg object-contain"
                                     />
                                 )}
                             </CardHeader>
