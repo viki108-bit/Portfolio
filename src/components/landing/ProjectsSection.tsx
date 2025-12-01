@@ -23,6 +23,15 @@ const projects = [
         tags: ["Excel", "Data Visualization", "Sales Analytics"],
         liveUrl: "",
         githubUrl: "https://github.com/viki108-bit/excel-Sale-dashboard-projects"
+    },
+    {
+        title: "Blinkit Sales Dashboard",
+        description: "A Power BI dashboard analyzing Blinkit’s sales data to provide insights into total sales, item categories, outlet performance, and sales trends by outlet type.",
+        imageUrl: "/blinkit-dashboard.jpg",
+        imageDescription: "Blinkit Sales Dashboard Screenshot",
+        tags: ["Power BI", "Data Modelling", "DAX", "Data Visualization"],
+        liveUrl: "https://app.powerbi.com/view?r=eyJrIjoiYjIxMDhmMDctZWM3NS00NTk1LTk4YjMtMmQ3NWFiMzY1NzIzIiwidCI6ImQzOGI4YmJiLTg0MDYtNDVhMC05M2JiLWI0MDZkMjAwY2YzYiJ9",
+        githubUrl: "https://github.com/viki108-bit/Blinkit-Sales-Dashboard"
     }
 ]
 
