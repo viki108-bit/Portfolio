@@ -7,8 +7,17 @@ import { ArrowUpRight, Github } from 'lucide-react';
 
 const projects = [
     {
+        title: "Blinkit Sales Dashboard",
+        description: "A Power BI dashboard analyzing Blinkit’s sales data to provide insights into total sales, item categories, outlet performance, and sales trends.",
+        imageUrl: "/blinkit-dashboard.jpg",
+        imageDescription: "Blinkit Sales Dashboard Screenshot",
+        tags: ["Power BI", "Data Modelling", "DAX", "Data Visualization"],
+        liveUrl: "https://app.powerbi.com/view?r=eyJrIjoiYjIxMDhmMDctZWM3NS00NTk1LTk4YjMtMmQ3NWFiMzY1NzIzIiwidCI6ImQzOGI4YmJiLTg0MDYtNDVhMC05M2JiLWI0MDZkMjAwY2YzYiJ9",
+        githubUrl: "https://github.com/viki108-bit/Blinkit-Sales-Dashboard"
+    },
+    {
         title: "HR Dashboard",
-        description: "Created an HR Analytics Dashboard in Excel to analyze employee data, highlighting demographics, performance, and salary distributions using Pivot Tables, Charts, and Slicers.",
+        description: "An Excel dashboard to analyze employee data, highlighting demographics, performance, and salary distributions using Pivot Tables, Charts, and Slicers.",
         imageUrl: "/hr-dashboard.jpg",
         imageDescription: "HR Analytics Dashboard Screenshot",
         tags: ["Excel", "Pivot Tables", "Data Visualization", "HR Analytics"],
@@ -42,12 +51,12 @@ export function ProjectsSection() {
                         <Card key={index} className="flex flex-col bg-card/50 hover:bg-card border-border/50 hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
                             <CardHeader>
                                 {project.imageUrl && (
-                                    <div className="relative">
+                                    <div className="relative aspect-video">
                                         <Image 
                                             src={project.imageUrl} 
                                             alt={project.imageDescription}
-                                            width={600} 
-                                            height={400} 
+                                            width={600}
+                                            height={400}
                                             className="rounded-lg object-contain"
                                         />
                                     </div>
